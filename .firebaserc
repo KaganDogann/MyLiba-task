@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "myliba-606c7": {
+      "hosting": {
+        "my-liba": [
+          "myliba-606c7"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "myliba-606c7"
+  }
+}

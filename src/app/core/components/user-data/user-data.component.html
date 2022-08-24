@@ -1,0 +1,26 @@
+<div class="test card">
+  <mat-card appearance="standard" class="card-container mx-2 my-2 border " *ngFor="let item of userList">
+    {{ item.name }} {{ item.lastName }}, {{ item.email }}
+    <button
+      class="icon-test"
+      routerLink="/test/{{ item.id }}"
+      (click)="setUser(item)"
+      mat-icon-button
+      color="primary"
+      aria-label="Example icon button with a home icon"
+    >
+      <mat-icon>edit</mat-icon>
+    </button>
+    <button
+      class="icon-test"
+      (click)="deleteUser(item)"
+      mat-icon-button
+      color="warn"
+      aria-label="Example icon button with a home icon"
+    >
+      <mat-icon>delete_forever</mat-icon>
+    </button>
+  </mat-card>
+</div>
+
+
